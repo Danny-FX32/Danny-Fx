@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My Portfolio</title>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1> Danny_FX </h1>
+    <p>Front-End Developer | HTML, CSS, JavaScript</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <button class="toggle-btn" id="themeToggle">🌙 Dark Mode</button>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      Hi, I'm Danny_FX! I'm passionate about building clean and modern websites. 
+      I specialize in HTML, CSS, and I’m learning JavaScript to make my sites interactive. 
+      I enjoy turning ideas into functional designs.
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>A responsive portfolio site to showcase my work.</p>
+      </div>
+      <div class="project">
+        <h3>Landing Pages For Your Business Or Product</h3>
+        <p>A clean landing pages for your business or products</p>
+      </div>
+      <div class="project">
+        <h3>Blog Or Event Pages </h3>
+        <p>A simple blog or event pages with modern design.</p>
+      </div>
+    </div>
+    <h1 style="margin-top: 20px; text-align: center; color: #0d6efd;">✅ Why choose me?</h1>
+    <ul>
+    <li style="margin-left:15px; margin-top: 10px;><b>Fast and responsive designs</b></li>
+    <li style="margin-left:15px; margin-top: 20px;"><b>Fast and responsive designs</b></li>
+    <li style="margin-left:15px;"><b>Mobile and SEO-friendly structure</b></li>
+    <li style="margin-left:15px;"><b>Clean, easy-to-edit code</b></li>
+    <li style="margin-left:15px;"><b>On-time delivery and support</b></li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <a href="mailto:youremail@example.com">Email Me</a>
+    <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+    <a href="https://github.com/" target="_blank">GitHub</a>
+
+    <!-- Hire Me Form -->
+    <form action="https://formspree.io/f/yourFormID" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="_replyto" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">📩 Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Danny_FX | All Rights Reserved</p>
+  </footer>
+
+  <!-- JavaScript for Theme Toggle -->
+  <script>
+    const toggleBtn = document.getElementById('themeToggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      if(document.body.classList.contains('dark')){
+        toggleBtn.textContent = "☀️ Light Mode";
+      } else {
+        toggleBtn.textContent = "🌙 Dark Mode";
+      }
+    });
+  </script>
+
+</body>
+</html>
